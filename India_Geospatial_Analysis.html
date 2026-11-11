@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1ce2d1acdd8b6e264cdce63b62ceef25 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1ce2d1acdd8b6e264cdce63b62ceef25" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1ce2d1acdd8b6e264cdce63b62ceef25 = L.map(
+                "map_1ce2d1acdd8b6e264cdce63b62ceef25",
+                {
+                    center: [22.5, 80.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_dc3feaffbe7caa9c52ec952962e28931 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_dc3feaffbe7caa9c52ec952962e28931.addTo(map_1ce2d1acdd8b6e264cdce63b62ceef25);
+        
+    
+            var circle_marker_308baca80fb2a0026649d2b6ab4bb7c2 = L.circleMarker(
+                [23.0428728, 72.557017],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1ce2d1acdd8b6e264cdce63b62ceef25);
+        
+    
+        var popup_9d0b837bca4edb18b90057b05c3534fb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d073091a28aff5c77f50ca86135b2559 = $(`<div id="html_d073091a28aff5c77f50ca86135b2559" style="width: 100.0%; height: 100.0%;">         City: Ahmedabad<br>         State: Gujarat<br>         Opportunity Score: 43.50<br>         Monthly Search Demand: 1042<br>         Competitors: 8.4         </div>`)[0];
+                popup_9d0b837bca4edb18b90057b05c3534fb.setContent(html_d073091a28aff5c77f50ca86135b2559);
+            
+        
+
+        circle_marker_308baca80fb2a0026649d2b6ab4bb7c2.bindPopup(popup_9d0b837bca4edb18b90057b05c3534fb)
+        ;
+
+        
+    
+    
+            circle_marker_308baca80fb2a0026649d2b6ab4bb7c2.bindTooltip(
+                `<div>
+                     Ahmedabad
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_515795d6071dc4d089c1c67b1a4a6275 = L.circleMarker(
+                [12.987721875, 77.57022375],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1ce2d1acdd8b6e264cdce63b62ceef25);
+        
+    
+        var popup_b694abe614debf5d5fc61669ef6c6195 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6f31a9f4ff903c6f925054dcf94fcdc5 = $(`<div id="html_6f31a9f4ff903c6f925054dcf94fcdc5" style="width: 100.0%; height: 100.0%;">         City: Bengaluru<br>         State: Karnataka<br>         Opportunity Score: 55.00<br>         Monthly Search Demand: 1056<br>         Competitors: 7.7         </div>`)[0];
+                popup_b694abe614debf5d5fc61669ef6c6195.setContent(html_6f31a9f4ff903c6f925054dcf94fcdc5);
+            
+        
+
+        circle_marker_515795d6071dc4d089c1c67b1a4a6275.bindPopup(popup_b694abe614debf5d5fc61669ef6c6195)
+        ;
+
+        
+    
+    
+            circle_marker_515795d6071dc4d089c1c67b1a4a6275.bindTooltip(
+                `<div>
+                     Bengaluru
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a5f4acfe65b98afb9c2b80939ac662c1 = L.circleMarker(
+                [13.086150638297873, 80.26899276595745],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_1ce2d1acdd8b6e264cdce63b62ceef25);
+        
+    
+        var popup_d7f06d81d3e7c5bed005e1e56f18af55 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_570dcaf769132f9dcbaede99dcca65d3 = $(`<div id="html_570dcaf769132f9dcbaede99dcca65d3" style="width: 100.0%; height: 100.0%;">         City: Chennai<br>         State: Tamil Nadu<br>         Opportunity Score: 66.50<br>         Monthly Search Demand: 1144<br>         Competitors: 7.9         </div>`)[0];
+                popup_d7f06d81d3e7c5bed005e1e56f18af55.setContent(html_570dcaf769132f9dcbaede99dcca65d3);
+            
+        
+
+        circle_marker_a5f4acfe65b98afb9c2b80939ac662c1.bindPopup(popup_d7f06d81d3e7c5bed005e1e56f18af55)
+        ;
+
+        
+    
+    
+            circle_marker_a5f4acfe65b98afb9c2b80939ac662c1.bindTooltip(
+                `<div>
+                     Chennai
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b7f04ccc102582d533a73997dadd5bf9 = L.circleMarker(
+                [28.60842125, 77.19774500000001],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1ce2d1acdd8b6e264cdce63b62ceef25);
+        
+    
+        var popup_45ac4d88c1d0e8d3ae6464f8b7029720 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b0b2be567d065cae2e5b75449d47f6cf = $(`<div id="html_b0b2be567d065cae2e5b75449d47f6cf" style="width: 100.0%; height: 100.0%;">         City: Delhi<br>         State: Delhi<br>         Opportunity Score: 29.00<br>         Monthly Search Demand: 947<br>         Competitors: 8.0         </div>`)[0];
+                popup_45ac4d88c1d0e8d3ae6464f8b7029720.setContent(html_b0b2be567d065cae2e5b75449d47f6cf);
+            
+        
+
+        circle_marker_b7f04ccc102582d533a73997dadd5bf9.bindPopup(popup_45ac4d88c1d0e8d3ae6464f8b7029720)
+        ;
+
+        
+    
+    
+            circle_marker_b7f04ccc102582d533a73997dadd5bf9.bindTooltip(
+                `<div>
+                     Delhi
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9da17a084849565f36c28f591f45e0d2 = L.circleMarker(
+                [17.391739285714284, 78.48127119047619],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_1ce2d1acdd8b6e264cdce63b62ceef25);
+        
+    
+        var popup_ab8aa477c0347d3cde1133b6eb2b01f2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a7c5c1905f7c0e9ffed64504d67cad4b = $(`<div id="html_a7c5c1905f7c0e9ffed64504d67cad4b" style="width: 100.0%; height: 100.0%;">         City: Hyderabad<br>         State: Telangana<br>         Opportunity Score: 82.00<br>         Monthly Search Demand: 1145<br>         Competitors: 7.2         </div>`)[0];
+                popup_ab8aa477c0347d3cde1133b6eb2b01f2.setContent(html_a7c5c1905f7c0e9ffed64504d67cad4b);
+            
+        
+
+        circle_marker_9da17a084849565f36c28f591f45e0d2.bindPopup(popup_ab8aa477c0347d3cde1133b6eb2b01f2)
+        ;
+
+        
+    
+    
+            circle_marker_9da17a084849565f36c28f591f45e0d2.bindTooltip(
+                `<div>
+                     Hyderabad
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5021c5214f1bc9e325e1d70eeaf4fcc6 = L.circleMarker(
+                [26.89030272727273, 75.82710727272728],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1ce2d1acdd8b6e264cdce63b62ceef25);
+        
+    
+        var popup_a089d5e7b999223beb04867d38394dc4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7fbf2b2fc5844bcf363e222ce5e21d25 = $(`<div id="html_7fbf2b2fc5844bcf363e222ce5e21d25" style="width: 100.0%; height: 100.0%;">         City: Jaipur<br>         State: Rajasthan<br>         Opportunity Score: 59.00<br>         Monthly Search Demand: 1056<br>         Competitors: 7.7         </div>`)[0];
+                popup_a089d5e7b999223beb04867d38394dc4.setContent(html_7fbf2b2fc5844bcf363e222ce5e21d25);
+            
+        
+
+        circle_marker_5021c5214f1bc9e325e1d70eeaf4fcc6.bindPopup(popup_a089d5e7b999223beb04867d38394dc4)
+        ;
+
+        
+    
+    
+            circle_marker_5021c5214f1bc9e325e1d70eeaf4fcc6.bindTooltip(
+                `<div>
+                     Jaipur
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2ff13998cbc88a28e23ce03c8e858d85 = L.circleMarker(
+                [9.923577179487179, 76.26328256410257],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1ce2d1acdd8b6e264cdce63b62ceef25);
+        
+    
+        var popup_196ab36167916cd1c68ebccf53f401aa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e8b267e0431878d00099ff3c03c86696 = $(`<div id="html_e8b267e0431878d00099ff3c03c86696" style="width: 100.0%; height: 100.0%;">         City: Kochi<br>         State: Kerala<br>         Opportunity Score: 48.00<br>         Monthly Search Demand: 1000<br>         Competitors: 6.8         </div>`)[0];
+                popup_196ab36167916cd1c68ebccf53f401aa.setContent(html_e8b267e0431878d00099ff3c03c86696);
+            
+        
+
+        circle_marker_2ff13998cbc88a28e23ce03c8e858d85.bindPopup(popup_196ab36167916cd1c68ebccf53f401aa)
+        ;
+
+        
+    
+    
+            circle_marker_2ff13998cbc88a28e23ce03c8e858d85.bindTooltip(
+                `<div>
+                     Kochi
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2c49bd685b7e00f2bbaff54d003f1d48 = L.circleMarker(
+                [22.5822325, 88.3845159375],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1ce2d1acdd8b6e264cdce63b62ceef25);
+        
+    
+        var popup_64e383292d4dca60de69645088db1150 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_589c1d0455ffb1499bb99fdea7ddfb80 = $(`<div id="html_589c1d0455ffb1499bb99fdea7ddfb80" style="width: 100.0%; height: 100.0%;">         City: Kolkata<br>         State: West Bengal<br>         Opportunity Score: 39.50<br>         Monthly Search Demand: 1066<br>         Competitors: 8.6         </div>`)[0];
+                popup_64e383292d4dca60de69645088db1150.setContent(html_589c1d0455ffb1499bb99fdea7ddfb80);
+            
+        
+
+        circle_marker_2c49bd685b7e00f2bbaff54d003f1d48.bindPopup(popup_64e383292d4dca60de69645088db1150)
+        ;
+
+        
+    
+    
+            circle_marker_2c49bd685b7e00f2bbaff54d003f1d48.bindTooltip(
+                `<div>
+                     Kolkata
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c7fc77f11c85e866fcfd9b33000473b2 = L.circleMarker(
+                [19.061258214285715, 72.90640714285715],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_1ce2d1acdd8b6e264cdce63b62ceef25);
+        
+    
+        var popup_ab08a1b3777c315eeabd20113290eadc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_01a45754dc4244e24a8ece596df3e172 = $(`<div id="html_01a45754dc4244e24a8ece596df3e172" style="width: 100.0%; height: 100.0%;">         City: Mumbai<br>         State: Maharashtra<br>         Opportunity Score: 78.50<br>         Monthly Search Demand: 1117<br>         Competitors: 7.2         </div>`)[0];
+                popup_ab08a1b3777c315eeabd20113290eadc.setContent(html_01a45754dc4244e24a8ece596df3e172);
+            
+        
+
+        circle_marker_c7fc77f11c85e866fcfd9b33000473b2.bindPopup(popup_ab08a1b3777c315eeabd20113290eadc)
+        ;
+
+        
+    
+    
+            circle_marker_c7fc77f11c85e866fcfd9b33000473b2.bindTooltip(
+                `<div>
+                     Mumbai
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6baea2763e90711372be6d56e54937b5 = L.circleMarker(
+                [18.52912268292683, 73.84181634146341],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1ce2d1acdd8b6e264cdce63b62ceef25);
+        
+    
+        var popup_2b39fe316b6f7e36f394a6f67492f6a2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b0b651a8b50f03aa13572b00dd971bb0 = $(`<div id="html_b0b651a8b50f03aa13572b00dd971bb0" style="width: 100.0%; height: 100.0%;">         City: Pune<br>         State: Maharashtra<br>         Opportunity Score: 49.00<br>         Monthly Search Demand: 1087<br>         Competitors: 7.9         </div>`)[0];
+                popup_2b39fe316b6f7e36f394a6f67492f6a2.setContent(html_b0b651a8b50f03aa13572b00dd971bb0);
+            
+        
+
+        circle_marker_6baea2763e90711372be6d56e54937b5.bindPopup(popup_2b39fe316b6f7e36f394a6f67492f6a2)
+        ;
+
+        
+    
+    
+            circle_marker_6baea2763e90711372be6d56e54937b5.bindTooltip(
+                `<div>
+                     Pune
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
