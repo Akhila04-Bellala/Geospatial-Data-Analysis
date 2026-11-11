@@ -1,4 +1,4 @@
-# Geospatial-Data-Analysis
+# Geospatial-Data-Analysis 
 Geospatial analysis of regional market opportunities in India using Python, Pandas and Folium.
 # Geospatial Data Analysis – Regional Market Opportunities in India
 
